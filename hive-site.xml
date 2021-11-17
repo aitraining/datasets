@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property>
+	<name>hive.metastore.warehouse.dir</name>
+	<value>/home/hadoop/work/warehouse</value>
+	<description>
+	Local or HDFS directory where Hive keeps table contents.
+	</description>
+</property>
+<property>
+	<name>javax.jdo.option.ConnectionURL</name>
+	<value>jdbc:mysql://localhost/metastore_db?createDatabaseIfNotExist=true</value>
+
+	<description>jdbc:derby:;databaseName=metastore_db;create=true</description>
+</property>
+<property>
+	<name>javax.jdo.option.ConnectionDriverName</name>
+	<value>com.mysql.jdbc.Driver</value>
+	<description>org.apache.derby.jdbc.EmbeddedDriver</description>
+</property>
+<property>
+	<name>javax.jdo.option.ConnectionUserName</name>
+	<value>root</value>
+	<description>MySQL username</description>
+</property>
+<property>
+	<name>javax.jdo.option.ConnectionPassword</name>
+	<value>hadoop</value>
+	<description>MySQL password</description>
+</property>
+  <property>
+    <name>hive.exec.reducers.bytes.per.reducer</name>
+    <value>512000000</value>
+    <description>size per reducer.The default is 256Mb, i.e if the input size is 1G, it will use 4 reducers.</description>
+  </property>
+  <property>
+    <name>hive.execution.engine</name>
+    <value>spark</value>
+  </property>
+  <property>
+    <name>hive.exec.reducers.max</name>
+    <value>1009</value>
+    <description>
+      max number of reducers will be used. If the one specified in the configuration parameter mapred.reduce.tasks is
+      negative, Hive will use this one as the max number of reducers when automatically determine number of reducers.
+    </description>
+  </property>
+<property>
+  <name>spark.home</name>
+  <value>/home/hadoop/work/spark-2.1.0-bin-hadoop2.7</value>
+</property>
+</configuration>
