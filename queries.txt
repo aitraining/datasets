@@ -1,0 +1,4 @@
+select * from banktab where age>80
+select * from banktab where balance>50000 and age>70
+select * from banktab where marital='single'
+select * from banktab where job='retired'

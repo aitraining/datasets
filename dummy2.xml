@@ -1,0 +1,36 @@
+<Curriculum>
+    <CourseOffering>
+        <Id>1</Id>
+        <Semistar>Fall</Semistar>
+        <Enrolled>128</Enrolled>
+        <Professor>
+            <Id>1</Id>
+            <Name>John Brown</Name>
+            <School>UNC</School>
+        </Professor>
+        <Course>
+            <Id>3</Id>
+            <Number>150</Number>
+            <CourseName>Biology I</CourseName>
+            <Department>Health Science</Department>
+            <MaximumStudents>150</MaximumStudents>
+        </Course>
+    </CourseOffering>
+    <CourseOffering>
+        <Id>2</Id>
+        <Semistar>Ball</Semistar>
+        <Enrolled>138</Enrolled>
+        <Professor>
+            <Id>1</Id>
+            <Name>Martin Joseph</Name>
+            <School>SBOA</School>
+        </Professor>
+        <Course>
+            <Id>4</Id>
+            <Number>160</Number>
+            <CourseName>Machine Learning</CourseName>
+            <Department>Data Science</Department>
+            <MaximumStudents>180</MaximumStudents>
+        </Course>
+    </CourseOffering>
+</Curriculum>
